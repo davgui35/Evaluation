@@ -6,9 +6,7 @@ $(document).ready(function(){
 
     $('.onglets')
     	// Variables contenant l'ensemble des liens du menu par onglet :
-        var $ongletItems = $(".onglets li") ;
-    
-		
+        var $ongletItems = $(".onglets li");
 		
 		$ongletItems.click(function(){
 			
