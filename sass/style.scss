@@ -1,0 +1,88 @@
+//Différentes tailles d'écrans
+$mobile-max: 767px;
+$tablet: 768px;
+$tablet-max: 991px;
+$desktop: 992px;
+
+.onglets{
+    display:flex;
+    list-style: none;
+    li{
+        margin: 25px 10px 20px 30px;
+    }
+
+}
+
+a{
+    color: black;
+}
+
+.active{
+    background-color: lightgrey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#blocs{
+    div{
+        background-color: red;
+    }
+    
+    h2{
+        text-align: center;
+    }
+
+    p{
+        text-align: justify;
+        padding: 10px;
+    }
+}
+
+#table-container{
+    
+    #table{
+        th{
+            padding-left: 20px;
+        }
+        td{
+            padding-left: 20px;
+        }
+        
+        tr{
+            border: 2px solid rgba(248, 244, 244, O.2);
+            
+        }
+    }
+
+
+}
+
+//----------------------------------------tablette--------
+@media (min-width: $tablet) AND (max-width: $tablet-max){
+
+#onglets{
+        margin: 15px 0 20px 15px;
+}
+
+#blocs{
+            display:flex;
+            justify-content: space-around;
+
+    }
+
+}
+
+
+// ------------------------Desktop-------------------
+@media (min-width: $desktop){
+
+#onglets{
+        margin: 15px 0 20px 15px;
+    }
+    #blocs{
+        display:flex;
+        justify-content: space-around;
+
+    }
+}
+
