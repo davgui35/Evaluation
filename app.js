@@ -4,12 +4,12 @@ $(document).ready(function(){
     // la mettre aussi dans height
     $('#container div').height(width);
 
-    $('#table')
+    $('.onglets')
     	// Variables contenant l'ensemble des liens du menu par onglet :
         var $ongletItems = $(".onglets li") ;
     
 		
-		// Fonction d�clench�es quand on clique sur l'un de ces items
+		
 		$ongletItems.click(function(){
 			
 			// On enl�ve la classe sur tous les items
@@ -22,11 +22,56 @@ $(document).ready(function(){
 			return false ;
 			
         });
-        console.log($ongletItems);
+        //console.log($ongletItems);
         // Je stocke mes sections et je les cache
-        //$sections = $("section").css("display","none") 
-        console.log($sections);
-		
+        $sections = $("section").css("display","none") 
+        //console.log($sections);
+        
+        $($ongletItems).click(function(){
+           var $clicked = $(this);
+            //Cacher mes sections
+            $sections.css('display', 'none');
+            // Le s�lecteur du tableau � afficher est donn� par l'attribut href du lien cliqu�
+            var selecteur = $clicked.attr('href');
+            console.log(selecteur);
+			
+			// J'affiche le tableau qui v�rifie le s�lecteur 
+            $ongletItems.filter(selecteur).css("display","block") ;
+            
+            //affiche le selecteur
+            $($sections).css('display', 'block');
+
+            // $($onglet_clicke.css('display', 'block');
+            return false;
+        });
    
-		
+		// Afficher par d�faut le premier tableau en simulant un clique sur le premier item
+        $ongletItems.eq(0).click() ;
+        
+
+        //Video
+
+        
+
+
+        // loupe
+        
+		var $loupe = $("<div id=\"loupe\"></div>").css("display","none").appendTo($("#table-container"));
+		$('#loupe').hide();
+
+                $("td").hover(
+            // La souris arrive sur l’élément
+            function(){
+            $('#loupe').show().text($(this).text());
+            $(this).addClass("pseudo-hover") ;
+            },
+            // La souris quitte l’élément
+            function(){
+            $('#loupe').hide().text($(this).text());
+            $(this).removeClass("pseudo-hover") ;
+            }
+            )
+	
+
+
 });

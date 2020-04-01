@@ -13,6 +13,11 @@ $desktop: 992px;
 
 }
 
+
+section{
+    margin-bottom: 25px;
+}
+
 a{
     color: black;
 }
@@ -49,7 +54,7 @@ a{
         }
         
         tr{
-            border: 2px solid rgba(248, 244, 244, O.2);
+            border: 2px solid rgba($color: gray, $alpha: 1.0)
             
         }
     }
