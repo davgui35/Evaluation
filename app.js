@@ -22,25 +22,25 @@ $(document).ready(function(){
         });
         //console.log($ongletItems);
         // Je stocke mes sections et je les cache
-        var $sections = $("section").css("display","none") 
-        //console.log($sections);
+        // $sections = $("section").css("display","none") 
+        // //console.log($sections);
         
-        $('.onglets li a').click(function(){
-           var $clicked = $(this);
-            //Cacher mes sections
-            $sections.css('display', 'none');
+        // $($ongletItems).click(function(){
+        //    var $clicked = $(this);
+        //     //Cacher mes sections
+        //     $sections.css('display', 'none');
             
-            var selecteur = $clicked.attr('href');
-            console.log(selecteur);
+        //     var selecteur = $clicked.attr('href');
+        //     console.log(selecteur);
 			
-            $ongletItems.filter(selecteur).css("display","block") ;
+        //     $ongletItems.filter(selecteur).css("display","block") ;
             
-            //affiche le selecteur
-            $($sections).css('display', 'block');
+        //     //affiche le selecteur
+        //     $($sections).css('display', 'block');
 
-            $($onglet_clicke.css('display', 'block');
-            return false;
-        });
+        //     $($onglet_clicke.css('display', 'block');
+        //     return false;
+        // });
    
 		// Afficher par d�faut le premier tableau en simulant un clique sur le premier item
         $ongletItems.eq(0).click() ;
