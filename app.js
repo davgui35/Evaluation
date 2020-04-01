@@ -22,10 +22,10 @@ $(document).ready(function(){
         });
         //console.log($ongletItems);
         // Je stocke mes sections et je les cache
-        $sections = $("section").css("display","none") 
+        var $sections = $("section").css("display","none") 
         //console.log($sections);
         
-        $($ongletItems).click(function(){
+        $('.onglets li a').click(function(){
            var $clicked = $(this);
             //Cacher mes sections
             $sections.css('display', 'none');
