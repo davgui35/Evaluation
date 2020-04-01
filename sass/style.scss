@@ -57,6 +57,16 @@ a{
 
 }
 
+#lien-videos{
+    list-style: none;
+}
+
+#la_video{
+    border: 2px solid black;
+    margin-left: 15px;
+}
+
+
 //----------------------------------------tablette--------
 @media (min-width: $tablet) AND (max-width: $tablet-max){
 
