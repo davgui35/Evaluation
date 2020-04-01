@@ -13,6 +13,17 @@ $desktop: 992px;
 
 }
 
+#loupe {
+    position:absolute;
+    right:5px;
+    top:50px;
+    display:inline-block;
+    background:#eee;
+    border:1px solid #DD4B39;
+    font-size:2em;
+    font-weight:600;
+    padding:10px;
+   }
 
 section{
     margin-bottom: 25px;

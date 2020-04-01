@@ -41,8 +41,8 @@ $(document).ready(function(){
         //     $($onglet_clicke.css('display', 'block');
         //     return false;
         // });
-   
-		// Afficher par d�faut le premier tableau en simulant un clique sur le premier item
+
+
         $ongletItems.eq(0).click() ;
         
 
