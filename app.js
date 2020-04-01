@@ -31,17 +31,16 @@ $(document).ready(function(){
            var $clicked = $(this);
             //Cacher mes sections
             $sections.css('display', 'none');
-            // Le s�lecteur du tableau � afficher est donn� par l'attribut href du lien cliqu�
+            
             var selecteur = $clicked.attr('href');
             console.log(selecteur);
 			
-			// J'affiche le tableau qui v�rifie le s�lecteur 
             $ongletItems.filter(selecteur).css("display","block") ;
             
             //affiche le selecteur
             $($sections).css('display', 'block');
 
-            // $($onglet_clicke.css('display', 'block');
+            $($onglet_clicke.css('display', 'block');
             return false;
         });
    
@@ -57,19 +56,10 @@ $(document).ready(function(){
         $(links).click(function(){
             var $click = $(this);
             //Cacher mes sections
-            $sections.css('display', 'none');
-            // Le s�lecteur du tableau � afficher est donn� par l'attribut href du lien cliqu�
+            $links.css('display', 'none');
+           
             var selecteur = $click.attr('href');
             console.log(selecteur);
-			
-			// J'affiche le tableau qui v�rifie le s�lecteur 
-            $ongletItems.filter(selecteur).css("display","block") ;
-            
-            //affiche le selecteur
-            $($sections).css('display', 'block');
-
-            // $($onglet_clicke.css('display', 'block');
-            return false;
         });
           
 
